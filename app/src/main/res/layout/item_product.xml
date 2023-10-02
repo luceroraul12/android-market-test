@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginVertical="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvProductNameItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_de_producto"
+                android:textSize="@dimen/item_titulo_producto"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProductDescriptionItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion_de_producto_ejemplo"
+                android:textSize="@dimen/item_descripcion_producto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvProductUnitItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x100g"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/tvProductPriceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2000,98"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
